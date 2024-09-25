@@ -58,7 +58,15 @@ public class JobData {
         loadData();
 
         // Bonus Mission 2: Create a copy of allJobs
-        // (ArrayList<Integer>)number.clone();
+
+        // ArrayList cloneArr = (ArrayList)mainArr.clone();
+        // ArrayList list2 = new ArrayList();
+        // list2 = (ArrayList)list1.clone();
+
+//        ArrayList <HashMap<String, String>> copyOfAllJobs = new ArrayList<>();
+//        copyOfAllJobs= (ArrayList<HashMap<String, String>>)allJobs.clone();   // gives warning: unchecked cast: shallow copy of clone
+
+
         ArrayList <HashMap<String, String>> copyOfAllJobs = allJobs;
         copyOfAllJobs.clone();
 
