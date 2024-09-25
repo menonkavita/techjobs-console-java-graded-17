@@ -123,7 +123,8 @@ public class TechJobs {
 
         //System.out.println("printJobs is not implemented yet");
         if (someJobs.size() <= 0){
-            System.out.println("No Results");                           // Printing "No Results" if arrayList is empty
+            System.out.print("No Results");                 // Printing "No Results" if arrayList is empty;
+                                                            // Passed test - Failed earlier because of println()
         }
         else{
             for (HashMap<String, String> someJob : someJobs) {          // Printing "No Results" if arrayList is empty
