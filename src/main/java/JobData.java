@@ -43,7 +43,11 @@ public class JobData {
             if (!values.contains(aValue)) {
                 values.add(aValue);
             }
-        }
+        } // end for
+
+        // Bonus Mission #1 : Sorting list results:
+        // Sorting results - the list of employers, locations, position types, etc., alphabetically.
+        Collections.sort(values);
 
         return values;
     }
@@ -53,7 +57,14 @@ public class JobData {
         // load data, if not already loaded
         loadData();
 
-        return allJobs;
+        // Bonus Mission 2: Create a copy of allJobs
+        // (ArrayList<Integer>)number.clone();
+        ArrayList <HashMap<String, String>> copyOfAllJobs = allJobs;
+        copyOfAllJobs.clone();
+
+        return copyOfAllJobs;
+
+        //return allJobs;
     }
 
     /**
